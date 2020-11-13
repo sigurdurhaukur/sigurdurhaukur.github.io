@@ -47,7 +47,7 @@ footer {
 }
 .img__img {
     object-fit: cover;
-    width: 100%;
+    width: 90vw;
     height: 20em;
 
     border-radius: .2em;
