@@ -19,10 +19,10 @@ h1 {
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 450;
 
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .info {
@@ -42,15 +42,56 @@ footer {
 .info__p {
   line-height: 1.5;
   text-align: left;
+  margin: 1em;
+
+  text-indent: 40px
 }
 .info__img {
     object-fit: cover;
     width: 90vw;
-    height: 20em;
+    max-width: 70ch;
+    margin: 1em;
+    height: auto;
 
     border-radius: .2em;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  grid-column: 2 / 3;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 / 4;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
 @media (min-width: 300px) {
   .info__text {
     margin-top: 1em;
@@ -58,7 +99,7 @@ footer {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .title {
         font-size: 3.5em;
     }
@@ -69,8 +110,8 @@ footer {
     .info__text {
         margin: 0em;
     }
-    .reverse {
-    }
+
+  
     .text__h2 {
         text-align: center;
     }
@@ -78,10 +119,10 @@ footer {
         max-width: 70ch;
         margin: 1em;
     }
-    .img__img {
+    /* .info__img {
         height: 12em;
         width: auto
-    }
+    } */
 
     .left {
         margin-right: 1.5em;
