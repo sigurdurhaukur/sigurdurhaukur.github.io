@@ -17,11 +17,36 @@
 }
 
 .nav__a {
-  display: block;
-  padding: 8px;
   color: black;
   text-decoration: none;
   font-family: "Source Serif Pro", serif;
+
+  opacity: 0.75;
+  padding: 20px 0px 10px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav__a:hover {
+  opacity: 1;
+}
+
+.nav__a::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #031d44;
+}
+
+.nav__a--ltr::before {
+  width: 0%;
+  bottom: 5px;
+}
+
+.nav__a--ltr:hover::before {
+  width: 100%;
 }
 
 @media (min-width: 700px) {

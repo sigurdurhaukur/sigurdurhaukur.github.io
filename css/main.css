@@ -7,6 +7,7 @@ section {
   height: 100%;
 }
 
+/* the title */
 h1 {
   padding: 0;
   margin: 0;
@@ -25,22 +26,15 @@ h1 {
   font-size: 1.8em;
 }
 
+/* the rest */
 .information {
   font-family: "Roboto", sans-serif;
-}
-footer {
-  height: 2.5rem;
-
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 1em 0 1em;
-  color: grey;
 }
 .info__p {
   line-height: 1.5;
   text-align: left;
   margin: 1em;
-
+  
   text-indent: 40px;
 }
 .info__img {
@@ -49,10 +43,21 @@ footer {
   max-width: 70ch;
   margin: 1em;
   height: auto;
-
+  
   border-radius: 0.2em;
 }
 
+/* the footer */
+footer {
+  height: 2.5rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 1em 0 1em;
+  color: grey;
+}
+
+/* animations */
 .fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in;
