@@ -49,6 +49,16 @@
   width: 100%;
 }
 
+/* the footer */
+footer {
+  height: 2.5rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 1em 0 1em;
+  color: grey;
+}
+
 @media (min-width: 700px) {
   .nav {
     padding-left: 0rem;

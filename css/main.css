@@ -47,15 +47,7 @@ h1 {
   border-radius: 0.2em;
 }
 
-/* the footer */
-footer {
-  height: 2.5rem;
 
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 1em 0 1em;
-  color: grey;
-}
 
 /* animations */
 .fade-in {
