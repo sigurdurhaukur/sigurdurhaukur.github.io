@@ -3,6 +3,11 @@ body {
   height: 100vh;
 }
 
+nav {
+  z-index: 0;
+  background-color: transparent;
+}
+
 section {
   height: 100%;
 }
@@ -31,7 +36,7 @@ h1 {
   font-family: "Roboto", sans-serif;
 }
 .info__p {
-  line-height: 1.5;
+  line-height: 2;
   text-align: left;
   margin: 1em;
   

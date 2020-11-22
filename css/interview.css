@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.interview {
+    max-width: 75ch;
+    margin: 5em 0;
+    padding: 0 2em;
+
+    line-height: 1.5;
+}
+
+.inter__p {
+    margin-bottom: 2em;
+}
