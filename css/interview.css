@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans+Narrow&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
+
 
 .interview {
     max-width: 75ch;
@@ -13,4 +17,63 @@
 
 .inter__p {
     margin-bottom: 2em;
+}
+/* ellie */
+.ellie__interview {
+    margin: 0 auto 0 auto;
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.interview__h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.interview__p {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    margin: 10rem auto;
+    
+    text-align: center;}
+
+/* emma */
+.emma__interview {
+    max-width: 10000000em;
+}
+.quote {
+    width: 18em;
+    margin: 0 auto 0 auto;
+    padding: 2rem;
+    padding-bottom: 25vh;
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.quote__p {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* nichola */
+.nichola__interview {
+    max-width: 75ch;
+    margin: 5em auto 0 auto;
+    padding: 0 2em;
+
+    line-height: 1.5;
+}
+.title__h1 {
+    font-size: 3em;
+    margin-bottom: 3rem;
+}
+.nichola-interview__p {
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 50px;
 }

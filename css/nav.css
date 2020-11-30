@@ -64,7 +64,7 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1420px) {
   .nav__ul {
     position: fixed;
     top: 0;
